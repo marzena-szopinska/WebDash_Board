@@ -6,8 +6,7 @@
 
 body {
   font-size: 16px;
-  color: #888;
-  background-color: gray;
+  color: #000;
 }
 
 .bell-icon {
@@ -18,6 +17,10 @@ body {
   /* set the size for navigation icon */
   width: 60px;
   height: auto;
+}
+
+.alert-window {
+  background-color: #7477bf;
 }
 
 .secondary-nav {
