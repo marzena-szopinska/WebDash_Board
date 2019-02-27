@@ -7,10 +7,13 @@
 body {
   font-size: 16px;
   color: #000;
+  font-family: 'Lato', sans-serif;
 }
 
-.bell-icon {
-  width: 30px;
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .nav-icon {
@@ -19,12 +22,68 @@ body {
   height: auto;
 }
 
+.space {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sides {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/************ HEADER *************/
+header {
+  width: 100%;
+}
+
+header .down {
+  padding-top: 10px;
+}
+
+.secondary-nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.secondary-nav,
 .alert-window {
   background-color: #7477bf;
 }
 
-.secondary-nav {
-  background-color: #7477bf;
+.logo span {
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: 'Coiny', cursive;
+  font-size: 130%;
+}
+
+.bell-icon {
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+.avatar {
+  float: left;
+  padding-left: 15px;
+  border-left: 2px dashed #fff;
+}
+
+.avatar-name {
+  float: right;
+  /* move away the name from the avatar */
+  margin-left: 10px;
+}
+
+.avatar-img {
+  /* make the image rounded */
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px){
