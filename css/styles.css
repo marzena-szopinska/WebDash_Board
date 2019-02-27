@@ -10,6 +10,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .clearfix {
   content: "";
   display: table;
@@ -84,6 +88,23 @@ header .down {
   width:40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.primary-nav {
+  background-color: #4d4c72;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+}
+
+.nav-icon {
+  width: 40px;
+  opacity: .7;
+  transition: opacity .3s ease-out;
+}
+
+.nav-icon:hover {
+  opacity: 1;
 }
 
 @media (min-width: 768px){
