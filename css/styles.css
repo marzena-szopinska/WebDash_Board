@@ -108,7 +108,7 @@ header .down {
 
 /************ SEARCH *************/
 
-.container {
+.main-grid {
   padding: 15px;
 }
 
@@ -118,6 +118,19 @@ header .down {
   margin-top: 20px;
   padding: 8px;
   text-align: right;
+}
+
+.alert-window {
+  color: #fff;
+  padding: 12px;
+  font-weight: 300;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-window span, .cross {
+  font-weight: 700;
 }
 
 @media (min-width: 768px){
