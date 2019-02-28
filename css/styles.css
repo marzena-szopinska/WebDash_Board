@@ -18,6 +18,20 @@ h2 {
   margin-top: 15px;
 }
 
+h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
+}
+
 .clearfix {
   content: "";
   display: table;
@@ -88,11 +102,11 @@ header .down {
   border-radius: 50%;
 }
 
-.primary-nav {
-  background-color: #4d4c72;
+nav {
   display: flex;
   justify-content: space-around;
   height: 75px;
+  width: 100%;
 }
 
 .nav-icon {
@@ -108,36 +122,154 @@ header .down {
 
 /************ SEARCH *************/
 
-.main-grid {
-  padding: 15px;
-}
-
 #search {
   width: 100%;
   margin-bottom: 25px;
   margin-top: 20px;
   padding: 8px;
-  text-align: right;
+  border: 1px solid #828282;
 }
+
+#search,
+.alert-window {
+  border-radius: 8px;
+}
+
+/************ ALERT WINDOW *************/
 
 .alert-window {
   color: #fff;
   padding: 12px;
   font-weight: 300;
-  border-radius: 2px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .alert-window span, .cross {
   font-weight: 700;
 }
 
-@media (min-width: 768px){
+/************ TRAFFIC SECTION *************/
+.traffic-info {
+  list-style: none;
+  text-align: right;
+}
 
+.traffic-info li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.green {
+  background-color: #81c98f;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/************ GRID *************/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(20px, auto);
+  /*grid-gap: 10px;*/
+  grid-template-areas:
+  "header"
+  "nav"
+  "search"
+  "traffic"
+  "traffic-daily"
+  "mobile-users"
+  "social"
+  "new-members"
+  "activity"
+  "message"
+  "settings"
+}
+
+.grid-item-1 {
+  grid-area: header;
+}
+.grid-item-2 {
+  background-color: #4d4c72;
+  grid-area: nav;
+}
+.grid-item-3 {
+  grid-area: search;
+  padding: 15px;
+}
+.grid-item-4 {
+  grid-area: traffic;
+  padding: 15px;
+}
+.grid-item-5 {
+  background-color: yellow;
+  grid-area: traffic-daily;
+}
+.grid-item-6 {
+  background-color: purple;
+  grid-area: mobile-users;
+}
+.grid-item-7 {
+  background-color: blue;
+  grid-area: social;
+}
+.grid-item-8 {
+  background-color: gold;
+  grid-area: new-members;
+}
+.grid-item-9 {
+  background-color: pink;
+  grid-area: activity;
+}
+.grid-item-10 {
+  background-color: black;
+  grid-area: message;
+}
+.grid-item-11 {
+  background-color: #205;
+  grid-area: settings;
+}
+
+@media (min-width: 768px){
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "search search"
+    "traffic traffic"
+    "traffic-daily mobile-users"
+    "social social"
+    "new-members activity"
+    "message settings"
+  }
 
 }
 
 @media (min-width: 1024px){
+  .grid {
+    height: 100vh;
+    grid-template-columns: .15fr repeat(2, 1fr);
+    grid-template-areas:
+    "header header header"
+    "nav search search"
+    "nav traffic traffic"
+    "nav traffic-daily mobile-users"
+    "nav social social"
+    "nav new-members activity"
+    "nav message settings"
+  }
 
+  nav {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  nav img {
+    display: block;
+    margin: 0 auto;
+  }
 }
