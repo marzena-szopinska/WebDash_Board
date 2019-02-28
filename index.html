@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Coiny|Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js" />
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -52,7 +51,11 @@
         <li>Monthly</li>
       </ul>
     </div>
-    <div class="grid-item-5">5</div>
+    <div class="grid-item-5">
+      <hr>
+      <h3>Daily Traffic</h3>
+      <canvas id="bar-chart"></canvas>
+    </div>
     <div class="grid-item-6">6</div>
     <div class="grid-item-7">7</div>
     <div class="grid-item-8">8</div>
@@ -60,5 +63,7 @@
     <div class="grid-item-10">10</div>
     <div class="grid-item-11">11</div>
   </div>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>

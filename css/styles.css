@@ -204,8 +204,8 @@ nav {
   padding: 15px;
 }
 .grid-item-5 {
-  background-color: yellow;
   grid-area: traffic-daily;
+  padding: 15px;
 }
 .grid-item-6 {
   background-color: purple;
