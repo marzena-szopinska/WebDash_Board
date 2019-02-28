@@ -154,6 +154,7 @@ nav {
 .traffic-info {
   list-style: none;
   text-align: right;
+  margin-bottom: 15px;
 }
 
 .traffic-info li {
@@ -165,6 +166,11 @@ nav {
   background-color: #81c98f;
   color: #fff;
   border-radius: 8px;
+}
+
+/************ CHARTS *************/
+.canvas {
+
 }
 
 /************ GRID *************/
@@ -208,8 +214,8 @@ nav {
   padding: 15px;
 }
 .grid-item-6 {
-  background-color: purple;
   grid-area: mobile-users;
+  padding: 15px;
 }
 .grid-item-7 {
   background-color: blue;
