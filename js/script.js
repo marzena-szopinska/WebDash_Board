@@ -3,7 +3,7 @@ const doughnutChart = document.getElementById("doughnut-chart");
 const lineChart = document.getElementById("line-chart");
 
 
-let myChart = new Chart(lineChart, {
+let lineTrafficLine = new Chart(lineChart, {
     type: 'line',
     data: {
         labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
@@ -23,6 +23,11 @@ let myChart = new Chart(lineChart, {
         ]
     },
 });
+
+// if (window.matchMedia("(min-width: 769px)").matches) {
+  //lineTrafficLine.canvas.parentNode.style.width = '800px';
+//} 
+
 
 let barTrafficChart = new Chart(barChart, {
     type: 'bar',

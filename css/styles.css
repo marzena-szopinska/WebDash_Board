@@ -268,6 +268,20 @@ nav {
     "nav message settings"
   }
 
+  .grid-item-3 {
+    padding: 35px;
+  }
+  .grid-item-4 {
+    padding: 35px;
+  }
+  .grid-item-5 {
+    padding: 35px;
+  }
+  .grid-item-6 {
+    padding: 35px;
+  }
+
+
   nav {
     height: 100vh;
     flex-direction: column;
