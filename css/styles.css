@@ -235,7 +235,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.member .name, .date {
+.member .name, .date, .symbol {
   margin-top: 6px;
 }
 
@@ -248,6 +248,23 @@ nav {
 .member .info {
   width: 68%;
   display: flex;
+}
+
+/************ RECENT ACTIVITY *************/
+
+.grid-item-9 .member .info {
+  width: 90%;
+}
+
+.post-time {
+  font-style: italic;
+  font-size: 80%;
+}
+
+.symbol p {
+  font-size: 260%;
+  color: #7477bf;
+  font-weight: 300;
 }
 
 
