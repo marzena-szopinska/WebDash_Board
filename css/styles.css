@@ -20,7 +20,7 @@ h2 {
 
 h3 {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 hr {
@@ -173,6 +173,84 @@ nav {
 
 }
 
+/************ SOCIAL STATS *************/
+.social-icon {
+  background-color: #7477bf;
+  width: 100px;
+  height: 100px;
+}
+
+.social-widgets {
+  /*display: flex;
+  justify-content: space-around;*/
+}
+
+.widget {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f4f4;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
+
+.social-num {
+  margin-top: 20px;
+}
+
+.social-num p:first-child {
+  color: #7477bf;
+  font-size: 120%;
+  font-weight: 700;
+}
+
+.social-num p:last-child {
+  color: #777;
+  font-size: 190%;
+  font-weight: 300;
+}
+
+/************ NEW MEMBERS *************/
+.members {
+  width: 100%;
+}
+
+.member img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.member {
+  display: flex;
+  justify-content: space-between;
+  font-size: 70%;
+  padding: 10px;
+}
+
+.member:not(:last-of-type){
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 20px;
+}
+
+.member .name, .date {
+  margin-top: 6px;
+}
+
+.member .name a {
+  text-decoration: none;
+  display: block;
+  color: #7477bf;
+}
+
+.member .info {
+  width: 68%;
+  display: flex;
+}
+
+
 /************ GRID *************/
 
 .grid {
@@ -218,15 +296,15 @@ nav {
   padding: 15px;
 }
 .grid-item-7 {
-  background-color: blue;
+  padding: 15px;
   grid-area: social;
 }
 .grid-item-8 {
-  background-color: gold;
+  padding: 15px;
   grid-area: new-members;
 }
 .grid-item-9 {
-  background-color: pink;
+  padding: 15px;
   grid-area: activity;
 }
 .grid-item-10 {
