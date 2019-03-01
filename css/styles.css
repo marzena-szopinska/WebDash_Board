@@ -256,7 +256,6 @@ nav {
 
 @media (min-width: 1024px){
   .grid {
-    height: 100vh;
     grid-template-columns: .15fr repeat(2, 1fr);
     grid-template-areas:
     "header header header"
