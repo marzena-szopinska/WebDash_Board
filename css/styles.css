@@ -21,6 +21,8 @@ h2 {
 h3 {
   margin-top: 40px;
   margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 90%;
 }
 
 hr {
@@ -30,12 +32,6 @@ hr {
   background-image: -moz-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
-}
-
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .space {
@@ -128,6 +124,7 @@ nav {
   margin-top: 20px;
   padding: 8px;
   border: 1px solid #828282;
+  background-color: #fbfbfb;
 }
 
 #search,
@@ -253,7 +250,7 @@ nav {
 /************ RECENT ACTIVITY *************/
 
 .grid-item-9 .member .info {
-  width: 90%;
+  width: 80%;
 }
 
 .post-time {
@@ -265,6 +262,26 @@ nav {
   font-size: 260%;
   color: #7477bf;
   font-weight: 300;
+}
+
+/************ MESSAGE USER *************/
+#message_user {
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #828282;
+  background-color: #fbfbfb;
+}
+
+.btn-large {
+  width: 100%;
+  padding: 10px;
+  background-color: #7477bf;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
 }
 
 
@@ -321,15 +338,15 @@ nav {
   grid-area: new-members;
 }
 .grid-item-9 {
-  padding: 15px;
+  padding:15px;
   grid-area: activity;
 }
 .grid-item-10 {
-  background-color: black;
+  padding: 15px;
   grid-area: message;
 }
 .grid-item-11 {
-  background-color: #205;
+  padding: 15px;
   grid-area: settings;
 }
 
