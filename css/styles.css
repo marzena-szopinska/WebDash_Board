@@ -516,13 +516,14 @@ input:checked + .slidinggroove:after {
 
 
   nav {
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     justify-content: flex-start;
   }
 
   nav img {
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
+
   }
 }
