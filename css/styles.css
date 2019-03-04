@@ -147,6 +147,10 @@ nav {
   font-weight: 700;
 }
 
+.cross {
+  cursor: pointer;
+}
+
 /************ TRAFFIC SECTION *************/
 .traffic-info {
   list-style: none;
@@ -314,6 +318,7 @@ select {
   border-radius: 8px;
   border: 1px solid #828282;
   background-color: #fbfbfb;
+  color: #828282;
 }
 
 .grid-item-11 form {
@@ -475,7 +480,7 @@ input:checked + .slidinggroove:after {
 
 @media (min-width: 1024px){
   .grid {
-    grid-template-columns: .15fr repeat(2, 1fr);
+    grid-template-columns: .12fr repeat(2, 1fr);
     grid-template-areas:
     "header header header"
     "nav search search"
