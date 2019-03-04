@@ -6,20 +6,6 @@ cross.addEventListener('click', () => {
   cross.parentNode.style.display = "none";
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // CHARTS
 
 const barChart = document.getElementById("bar-chart");
@@ -48,10 +34,8 @@ let lineTrafficLine = new Chart(lineChart, {
     },
 });
 
-// if (window.matchMedia("(min-width: 769px)").matches) {
-  //lineTrafficLine.canvas.parentNode.style.width = '800px';
-//}
-
+// RESIZE CHARTS
+Chart.defaults.global.responsive = true;
 
 let barTrafficChart = new Chart(barChart, {
     type: 'bar',

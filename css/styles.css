@@ -175,10 +175,17 @@ nav {
 }
 
 /************ SOCIAL STATS *************/
+
 .social-icon {
   background-color: #7477bf;
-  width: 100px;
-  height: 100px;
+  transform-origin: 50% 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.facebook {
+  padding: 6px;
 }
 
 .social-widgets {
