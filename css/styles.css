@@ -492,7 +492,10 @@ input:checked + .slidinggroove:after {
   }
 
   .grid-item-3 {
-    padding: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15px;
   }
   .grid-item-4 {
     padding: 35px;
@@ -519,6 +522,9 @@ input:checked + .slidinggroove:after {
     padding: 35px;
   }
 
+  hr {
+    display: none;
+  }
 
   nav {
     height: 100%;
@@ -529,6 +535,18 @@ input:checked + .slidinggroove:after {
   nav img {
     display: block;
     margin: 40px auto;
+  }
 
+  .form-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-box h2 {
+    flex-grow: 2;
+  }
+
+  .form-box form {
+    flex-grow: 1;
   }
 }
