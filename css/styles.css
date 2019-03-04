@@ -492,7 +492,7 @@ input:checked + .slidinggroove:after {
   }
 
   .grid-item-3 {
-    padding-bottom: 35px;
+    padding-bottom: 0;
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 15px;
@@ -502,28 +502,38 @@ input:checked + .slidinggroove:after {
   }
   .grid-item-5 {
     padding: 35px;
+    border: 1px solid #b2b2b2;
   }
   .grid-item-6 {
     padding: 35px;
+    border: 1px solid #b2b2b2;
   }
   .grid-item-7 {
     padding: 35px;
   }
   .grid-item-8 {
     padding: 35px;
+    border: 1px solid #b2b2b2;
   }
   .grid-item-9 {
     padding: 35px;
+    border: 1px solid #b2b2b2;
   }
   .grid-item-10 {
     padding: 35px;
+    border-right: 1px solid #b2b2b2;
   }
   .grid-item-11 {
     padding: 35px;
+    border-left: 1px solid #b2b2b2;
   }
 
   hr {
     display: none;
+  }
+
+  h3 {
+    margin-top: 0;
   }
 
   nav {
