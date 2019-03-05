@@ -6,7 +6,7 @@ cross.addEventListener('click', () => {
   cross.parentNode.style.display = "none";
 });
 
-// SEND CONFIRMATION
+// MESSAGE USER
 let messageForm = document.querySelector(".message_user");
 const submitButton = messageForm.querySelector('button');
 

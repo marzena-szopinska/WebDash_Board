@@ -34,6 +34,9 @@ hr {
   background-image: -o-linear-gradient(left, #f0f0f0, #828282, #f0f0f0);
 }
 
+input[type="checkbox"] {
+}
+
 .space {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -77,6 +80,11 @@ header .down {
   width: 20px;
   float: left;
   margin-right: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.bell-icon:hover {
+  transform: scale(1.4);
 }
 
 .avatar {
