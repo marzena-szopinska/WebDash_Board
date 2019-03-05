@@ -8,7 +8,6 @@ cross.addEventListener('click', () => {
 
 // MESSAGE USER
 let messageForm = document.querySelector(".message_user");
-const submitButton = messageForm.querySelector('button');
 
 messageForm.addEventListener('submit', (e) => {
   e.preventDefault();

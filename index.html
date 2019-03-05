@@ -5,7 +5,8 @@
     <title>WebDash Board</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Coiny|Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -19,19 +20,19 @@
           <img src="icons/icon-bell.svg" class="bell-icon down" alt="bell icon">
 
           <div class="avatar">
-            <img src="https://randomuser.me/api/portraits/women/57.jpg" class="avatar-img">
+            <img src="https://randomuser.me/api/portraits/women/57.jpg" class="avatar-img" alt="Monica Jonson">
             <p class="avatar-name down">Monica Jonson</p>
           </div>
         </div>
       </div>
     </header>
     <nav class="grid-item-2">
-      <img src="icons/icon-dashboard.svg" class="nav-icon" alt="">
-      <img src="icons/icon-members.svg" class="nav-icon" alt="">
-      <img src="icons/icon-visits.svg" class="nav-icon" alt="">
-      <img src="icons/icon-settings.svg" class="nav-icon" alt="">
+      <a href="#1"><img src="icons/icon-dashboard.svg" class="nav-icon" alt="dashboar-icon"></a>
+      <a href="#2"><img src="icons/icon-members.svg" class="nav-icon" alt="members-icon"></a>
+      <a href="#3"><img src="icons/icon-visits.svg" class="nav-icon" alt="visits-icon"></a>
+      <a href="#4"><img src="icons/icon-settings.svg" class="nav-icon" alt="settings-icon"></a>
     </nav>
-    <div class="grid-item-3">
+    <div class="grid-item-3" id="1">
       <div class="form-box">
         <h2>Dashboard</h2>
         <form action="index.html" method="post">
@@ -56,7 +57,7 @@
         <canvas id="line-chart"></canvas>
       </div>
     </div>
-    <div class="grid-item-5">
+    <div class="grid-item-5" id="2">
       <hr>
       <h3>Daily Traffic</h3>
       <div class="canvas">
@@ -75,7 +76,7 @@
       <h3>Social Stats</h3>
       <div class="social-widgets">
         <div class="widget">
-            <svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="social-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 viewBox="-12 -12 52 52" enable-background="new -12 -12 52 52;" xml:space="preserve">
             <path fill="#fff" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
             	c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
@@ -90,7 +91,7 @@
         </div>
         <div class="widget">
             <svg class="social-icon facebook" enable-background="new 0 0 56.693 56.693" height="56.693px"
-            id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+             version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#fff" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029
              c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77
               L40.43,21.739z"/></svg>
@@ -100,7 +101,7 @@
           </div>
         </div>
         <div class="widget">
-          <svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="social-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="-12 -12 52 52" enable-background="new -12 -12 52 52;" xml:space="preserve">
           <path fill="#fff" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
           	c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
@@ -126,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item-8">
+    <div class="grid-item-8" id="3">
       <hr>
       <h3>New Memebers</h3>
       <div class="members">
@@ -241,7 +242,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-item-10">
+    <div class="grid-item-10" id="4">
       <hr>
       <h3>Message User</h3>
       <form class="message_user" action="index.html" method="post">
@@ -263,7 +264,7 @@
           <div class="slide">
             <input type="checkbox" id="email_notification">
             <div class="slidinggroove"></div>
-            <label for="email_notification" name=""></label>
+            <label for="email_notification"></label>
           </div>
         </div>
         <div class="setting_box">
@@ -273,7 +274,7 @@
           <div class="slide">
             <input type="checkbox" id="to_public">
             <div class="slidinggroove"></div>
-            <label for="to_public" name=""></label>
+            <label for="to_public"></label>
           </div>
         </div>
 
