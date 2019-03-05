@@ -83,6 +83,17 @@ header .down {
   float: left;
   margin-right: 10px;
   transition: all .2s ease-in-out;
+  position: relative;
+}
+
+.green-dot {
+  background-color: #85db80;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 17px;
+  right: 190px;
+  border-radius: 50%;
 }
 
 .bell-icon:hover {

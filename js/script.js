@@ -6,7 +6,7 @@ cross.addEventListener('click', () => {
   cross.parentNode.style.display = "none";
 });
 
-// MESSAGE USER
+// MESSAGE THE USER
 let messageForm = document.querySelector(".message_user");
 
 messageForm.addEventListener('submit', (e) => {
