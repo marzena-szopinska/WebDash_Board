@@ -6,8 +6,37 @@ cross.addEventListener('click', () => {
   cross.parentNode.style.display = "none";
 });
 
-// CHARTS
+// SEND CONFIRMATION
+let messageForm = document.querySelector(".message_user");
+const submitButton = messageForm.querySelector('button');
 
+messageForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let inputValue = messageForm.querySelector("input").value;
+  let textareaValue = messageForm.querySelector("textarea").value;
+  console.log(inputValue);
+  // if there is anything typed inside the input and the textarea
+  if(inputValue !== ""  && textareaValue !== ""){
+    // show the message
+    alert("The message has been sent.");
+    // clear the input and the textarea
+    messageForm.querySelector("input").value = "";
+    messageForm.querySelector("textarea").value = "";
+  }
+
+
+  if(inputValue === "" && textareaValue !== "") {
+      // show the message
+      alert("You must specify the person you want to send the message.");
+    } else if(inputValue !== "" && textareaValue === "") {
+      // show the message
+      alert("You must type the message to contact with " + inputValue + ".");
+    } else if(inputValue === "" && textareaValue === ""){
+      alert("You must fill in both fields to send a message.");
+  }
+});
+
+// CHARTS
 const barChart = document.getElementById("bar-chart");
 const doughnutChart = document.getElementById("doughnut-chart");
 const lineChart = document.getElementById("line-chart");
