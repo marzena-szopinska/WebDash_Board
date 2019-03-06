@@ -195,8 +195,22 @@ nav {
 
 /************ CHARTS *************/
 .canvas {
-
 }
+
+.canvas-line-box {
+  width: 92.7vw;
+}
+
+.canvas-bar-box {
+  width:90vw;
+  /*width:40vw;*/
+}
+
+.canvas-doughnut-box {
+  width:90vw;
+  /*width:40vw;*/
+}
+
 
 /************ SOCIAL STATS *************/
 
@@ -508,6 +522,23 @@ input:checked + .slidinggroove:after {
     width: 30%;
   }
 
+  .canvas-bar-box {
+    width:40vw;
+  }
+
+  .canvas-doughnut-box {
+    width:40vw;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .grid-item-9 .members .member {
+    padding-bottom: 20px
+  }
+
+
 }
 
 @media (min-width: 1024px){
@@ -530,7 +561,7 @@ input:checked + .slidinggroove:after {
     padding-top: 15px;
   }
   .grid-item-4 {
-    padding: 35px;
+    padding: 56px;
   }
   .grid-item-5 {
     padding: 35px;
@@ -560,13 +591,13 @@ input:checked + .slidinggroove:after {
     border-left: 1px solid #b2b2b2;
   }
 
+  .canvas-line-box {
+    width: 87vw;
+  }
+
   nav img {
     display: block;
     margin: 40px 25px;
-  }
-
-  hr {
-    display: none;
   }
 
   h3 {
