@@ -557,6 +557,11 @@ input:checked + .slidinggroove:after {
     border-left: 1px solid #b2b2b2;
   }
 
+  nav img {
+    display: block;
+    margin: 40px 25px;
+  }
+
   hr {
     display: none;
   }
@@ -569,11 +574,6 @@ input:checked + .slidinggroove:after {
     height: 100%;
     flex-direction: column;
     justify-content: flex-start;
-  }
-
-  nav img {
-    display: block;
-    margin: 40px auto;
   }
 
   .form-box {
